@@ -1,8 +1,14 @@
+
+
 const dashboard = () => {
+    const user = { name: 'Adrian'};
     return (
-        <div>
-       Dashboard Page
-        </div>
+        <main className="dashboard wrapper">
+            {/* <Header
+            title={`Welcome ${user?.name ?? 'Guest'}`}
+            description="Track activity, trends and popular destinantions in real time."
+            /> */}
+        </main>
     )
 }
 

@@ -5,11 +5,13 @@ import {
   Outlet,
   Scripts,
   ScrollRestoration,
+  type LinksFunction
 } from "react-router";
+
 
 import "./app.css";
 
-export const links: Route.LinksFunction = () => [
+export const links: LinksFunction = () => [
   { rel: "preconnect", href: "https://fonts.googleapis.com" },
   {
     rel: "preconnect",
@@ -23,7 +25,7 @@ export const links: Route.LinksFunction = () => [
 ];
 
 import {registerLicense} from "@syncfusion/ej2-base";
-import type { Route } from "./+types/root";
+
 
 registerLicense(import.meta.env.VITE_SYNCFUSION_LICENSE_KEY)
 
@@ -49,7 +51,7 @@ export default function App() {
   return <Outlet />;
 }
 
-export function ErrorBoundary({ error }: Route.ErrorBoundaryProps) {
+export function ErrorBoundary({ error }: {error:unknown}) {
   let message = "Oops!";
   let details = "An unexpected error occurred.";
   let stack: string | undefined;
