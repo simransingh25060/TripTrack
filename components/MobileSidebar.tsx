@@ -1,5 +1,5 @@
 //@ts-nocheck
-
+import NavItems from './NavItems';
 import {Link} from "react-router"
 import {SidebarComponent} from "@syncfusion/ej2-react-navigations";
 
@@ -25,7 +25,7 @@ let sidebar: SidebarComponent;
             <h1>Tourvisto</h1>
             </Link>
 
-            //@ts-ignore
+            {/* //@ts-ignore */}
             <button onClick={() => sidebar.toggle() }>
              <img src="/assets/icons/menu.svg" alt="menu" className="size-7" />
 
