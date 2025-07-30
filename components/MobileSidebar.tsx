@@ -11,7 +11,7 @@ let sidebar: SidebarComponent;
     }
 
     return(
-        <div className='mobile-sidebar wrapper'> 
+        <div className='mobile-sidebar wrapper pt-20'> 
         <header>
             <Link to="/">
             <img
