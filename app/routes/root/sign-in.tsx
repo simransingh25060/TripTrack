@@ -8,7 +8,7 @@ export async function clientloader() {
     try{
      const user = await account.get();
 
-     if (!user.$id) return redirect('/');
+     if (user.$id) return redirect('/');
 
     } catch (e) {
         console.log("Error fetching error", e)
