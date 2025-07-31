@@ -4,7 +4,6 @@ import {dashboardStats, user, allTrips} from "~/constants";
 import type {Route} from './+types/dashboard';
 
 
-
 export async function clientloader() {
     return await getUser();
 }
@@ -17,7 +16,7 @@ const Dashboard = ({ loaderData}: Route.ComponentProps) => {
 
 
 const dashboard = () => {
-     
+    
 
     const { totalUsers, usersJoined, totalTrips, tripsCreated, userRole, } = dashboardStats;
 
