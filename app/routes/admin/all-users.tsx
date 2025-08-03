@@ -17,7 +17,7 @@ const AllUsers = ({ loaderData }: Route.ComponentProps) => {
 
 
     return (
-       <main className='dashboard wrapper'>
+       <main className='all-users wrapper'>
       <Header
             title="Manage users"
             description="Filter, sort and access detailed user profiles."
