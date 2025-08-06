@@ -1,9 +1,8 @@
 import { GoogleGenerativeAI } from "@google/generative-ai";
 import { ID } from "appwrite";
 import { parseMarkdownToJson, parseTripData } from "lib/utils";
-import { data, type ActionFunctionArgs } from "react-router"
+import { data, type ActionFunctionArgs } from "react-router";
 import { appwriteConfig, database } from "~/appwrite/client";
-
 
 export const action = async ({ request } : ActionFunctionArgs) => {
     const {
