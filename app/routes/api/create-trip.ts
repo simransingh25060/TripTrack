@@ -4,6 +4,7 @@ import { parseMarkdownToJson, parseTripData } from "lib/utils";
 import { data, type ActionFunctionArgs } from "react-router";
 import { appwriteConfig, database } from "~/appwrite/client";
 
+
 export const action = async ({ request } : ActionFunctionArgs) => {
     const {
         country,
@@ -93,7 +94,7 @@ export const action = async ({ request } : ActionFunctionArgs) => {
 
        
 
-        return data({ id: result.$id })
+        return data({ id: result.$id });
     } catch(e) {
         console.error('Error generating travel plan', e);
     }
