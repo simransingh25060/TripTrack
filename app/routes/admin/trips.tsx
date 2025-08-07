@@ -70,14 +70,14 @@ const Trips = ({ loaderData }: Route.ComponentProps) => {
                     ))}
                 </div>
 
-                {/* <PagerComponent
+                <PagerComponent
                     totalRecordsCount={loaderData.total}
                     pageSize={8}
                     currentPage={currentPage
                     }
                     click={(args) => handlePageChange(args.currentPage)}
                     cssClass="!mb-4"
-                /> */}
+                />
             </section>
         </main>
 
